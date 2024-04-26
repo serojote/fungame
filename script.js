@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const scoreDisplay = document.getElementById('score');
   let score = 0;
 
+  clickBtn.textContent = score;
+
   clickBtn.addEventListener('click', () => {
     score++;
     scoreDisplay.textContent = score;
+    clickBtn.textContent = score;
   });
 });
